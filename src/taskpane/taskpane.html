@@ -31,12 +31,33 @@
       <h2 class="ms-font-xl">Please sideload your add-in to see app body.</h2>
     </section>
     <main id="app-body" class="ms-welcome__main" style="display: none">
-      <button class="ms-Button" id="login">Login</button><br /><br />
+      <div class="field">
+        <label class="label">User Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="e.g Tiagocunha" name="username" id="username" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Password</label>
+
+        <div class="control">
+          <input class="input" type="password" name="password" id="password" />
+        </div>
+      </div>
+      <br />
+      <div class="control"><button class="ms-Button" id="login">Login</button></div>
+
       <div class="need-login">
         <button class="ms-Button" id="insert-paragraph">Insere Texto</button><br /><br />
         <button class="ms-Button" id="apply-style">Aplicar Estilo</button><br /><br />
         <button class="ms-Button" id="change-font">Mudar Fonte</button><br /><br />
         <button class="ms-Button" id="insert-text-into-range">Inserir Abreviação</button><br /><br />
+        <button class="ms-Button" id="insert-table">Inserir Tabela</button><br /><br />
+        <button class="ms-Button" id="insert-image">Inserir Imagem</button><br /><br />
+        <button class="ms-Button" id="send-comment">Inserir Comentario</button><br /><br />
+
+        <select name="select-box" id="select-box"></select>
       </div>
     </main>
   </body>
