@@ -67,6 +67,7 @@ Office.onReady((info) => {
 
     // Assign event handlers and other initialization logic.
     document.getElementById("login").onclick = login;
+    document.getElementById("select-box").onfocus = selectBox;
     document.getElementById("insert-paragraph").onclick = insertParagraph;
     document.getElementById("apply-style").onclick = applyStyle;
     document.getElementById("change-font").onclick = changeFont;
@@ -74,7 +75,6 @@ Office.onReady((info) => {
     document.getElementById("insert-table").onclick = insertTable;
     document.getElementById("insert-image").onclick = insertImage;
     document.getElementById("send-comment").onclick = sendComment;
-    document.getElementById("select-box").onfocus = selectBox;
   }
 
   function login() {
